@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkground_img"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title_layout" />
+
+    <!-- 账号-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_credit_card_num"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/coll_acc_txt" />
+
+        <EditText
+            android:id="@+id/et_credit_card_num"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_credit_card_num"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#c3c3c3"
+            android:textSize="14sp" 
+            android:hint="@string/coll_acc_hint"
+            android:layout_marginRight="10.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+    <!-- 扫一扫按钮 -->
+        <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_selector"
+        android:gravity="center"
+        android:text="@string/scan_txt"
+        android:textColor="@color/g999999"
+        android:textSize="16sp" />
+    
+	<!-- 金额 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_credit_card_holder"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/coll_money_txt" />
+
+        <EditText
+            android:id="@+id/et_credit_card_holder"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_credit_card_holder"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="@string/credit_card_holder_hint"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#c3c3c3"
+            android:textSize="14sp" 
+            android:layout_marginRight="10.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+	<!-- 理由 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_payment_money"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/colle_reason_txt" />
+
+        <EditText
+            android:id="@+id/et_payment_money"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_payment_money"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="@string/colle_reason_hint"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#c3c3c3"
+            android:textSize="14sp" 
+            android:layout_marginRight="10.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_sure_payment"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/long_button_selector"
+        android:gravity="center"
+        android:text="@string/btn_sure_payment_txt2"
+        android:textColor="@color/g999999"
+        android:textSize="16sp" />
+
+    
+</LinearLayout>

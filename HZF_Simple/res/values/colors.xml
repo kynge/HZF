@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gffffffff">#ffffffff</color>
+    <color name="gffffff">#ffffff</color>
+    <color name="gf1f1f1">#f1f1f1</color>
+    <color name="g000000">#000000</color>
+    <color name="g333333">#333333</color>
+    <color name="g666666">#666666</color>
+    <color name="gcccccc">#cccccc</color>
+    <color name="g999999">#999999</color>
+    <color name="ge3e3e3">#e3e3e3</color>
+    <color name="gededed">#ededed</color>
+    <color name="gf2f2f2">#f2f2f2</color>
+    <!-- button禁用颜色 -->
+    <color name="ge0e0e0">#e0e0e0</color>
+    <!-- dialog button 颜色-->
+    <color name="geb7f6e">#eb7f6e</color>
+    <!-- 首页tab下的颜色条 -->
+    <color name="ga74a3a">#a74a3a</color>
+    <color name="ge1e1e1">#e1e1e1</color>
+    <!-- super -->
+    <color name="pay_bg_color">#FFFFFF</color>
+    <color name="edit_text_hint_color">#cccccc</color>
+    <color name="list_line_color">#e6e6e6</color>
+    <color name="grid_text_color">#333333</color>
+    <color name="list_selected_color">#EB7F6E</color>
+    <color name="list_black_color">#e3e3e3</color>
+    <color name="gray">#808080</color>
+    <color name="white">#ffffff</color>
+    <color name="mytransparent">#00ffffff</color>
+    <color name="trac_title_click_backg">#e6a37a</color>
+    <color name="trac_titel_com_backg">#dfdfdf</color>
+    <color name="com_line_color">#c4c4c4</color>
+    <color name="deep_line_color">#b4b4b4</color>
+    
+    <color name="TextColorBlack">#ff333333</color>
+    
+    
+        <!-- start zxing -->
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <!-- end zxing -->
+
+</resources>

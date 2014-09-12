@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkground_img"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp" >
+
+        <TextView
+            android:id="@+id/lbl_user_name"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|left"
+            android:text="真实姓名" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/identifie_img"
+            android:layout_toRightOf="@+id/lbl_user_name"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:text="擎动网络"
+			style="@style/et_login_et_style2"            
+            />
+
+        <ImageView
+            android:id="@+id/identifie_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/renzheng_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c3c3c3" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp" >
+
+        <TextView
+            android:id="@+id/phone_text"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|left"
+            android:text="手机号" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/phone_text"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:text="18627758934"
+            style="@style/et_login_et_style2" 
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c3c3c3" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp" >
+
+        <TextView
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|left"
+            android:text="性别" />
+
+        <RadioGroup
+            android:id="@+id/user_sexuality_rdg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_radio_selector"
+                android:button="@null"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="女士"
+                style="@style/et_login_et_style2" 
+                />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/button_radio_selector"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="男士"
+                style="@style/et_login_et_style2" 
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c3c3c3" />
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/login_psd" />
+
+        <EditText
+            android:id="@+id/psd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/bitian"
+            android:layout_toRightOf="@+id/text"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            style="@style/et_login_et_style2" 
+            />
+
+        <TextView
+            android:id="@+id/bitian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="必填"
+            android:textColor="#e6a37a"
+            android:textSize="14sp"
+            android:singleLine="true"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/lbl_birthday"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="生日：" />
+
+        <EditText
+            android:id="@+id/birthday"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lbl_birthday"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:maxLength="20"
+            android:editable="false"
+            android:clickable="true"
+            style="@style/et_login_et_style2" 
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_frame_selector" />
+
+        <Button
+            android:id="@+id/spinner"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/lbl_address"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="地址：" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lbl_address"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:maxLength="50"
+            style="@style/et_login_et_style2" 
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/lbl_tel"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="联系电话：" />
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lbl_tel"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:inputType="number"
+            android:maxLength="12"
+			style="@style/et_login_et_style2" 
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/long_button_selector"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/g999999"
+        android:textSize="16sp" />
+
+</LinearLayout>

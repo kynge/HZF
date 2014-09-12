@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkground_img"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/mytransparent"
+            android:orientation="horizontal" >
+            
+            <ImageButton
+                android:id="@+id/select_number_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/whty_button_address"
+                android:scaleType="fitXY" />
+            
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_toLeftOf="@id/select_number_button"
+            	android:layout_marginRight="3dp">
+
+	            <TextView
+	                android:id="@+id/phoneNum"
+	                style="@style/text_style_common"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:background="@color/mytransparent"
+	                android:layout_alignParentLeft="true"
+	                android:paddingLeft="1dp"
+	                android:gravity="bottom"
+	                android:text="手机号码 :" />
+	
+	            <FrameLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_marginBottom="1dp"
+	                android:layout_marginRight="1dp"
+	                android:layout_marginTop="1dp" 
+	                android:layout_toRightOf="@id/phoneNum">
+	
+	                <EditText
+	                    android:id="@+id/phone_number_edit"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:background="@color/mytransparent"
+	                    android:inputType="number"
+	                    android:maxLength="11"
+	                    android:paddingRight="5dp"
+	                    android:hint="请输入或选择手机号"
+	                    android:gravity="bottom|right"
+	                    android:text=""
+	                    style="@style/text_style_common2"
+	                    />
+	
+	                <ImageButton
+	                    android:id="@+id/select_no"
+	                    android:layout_width="10dp"
+	                    android:layout_height="38dp"
+	                    android:layout_gravity="right|center_vertical"
+	                    android:layout_marginRight="35dp"
+	                    android:background="@null"
+	                    android:scaleType="fitXY" 
+	                    android:visibility="gone"/>
+	            </FrameLayout>
+	            
+	            <ImageView
+	                android:id="@+id/history_bottom_pic"
+	            	android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+	            	android:layout_alignParentBottom="true"
+	           	 	android:scaleType="fitXY"
+	            	android:src="@drawable/selector_frame_selector" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/notifylabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/layout2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="支持移动/联通/电信"
+            android:textColor="@color/trac_title_click_backg"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifylabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tig_img2"
+            android:lineSpacingExtra="8dp"
+            android:paddingTop="23dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/start_recharge_button"
+            style="@style/pay_button_style"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="56dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:text="下一步" />
+
+        <LinearLayout
+            android:id="@+id/spinnerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

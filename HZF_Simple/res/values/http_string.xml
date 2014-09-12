@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+          <!-- Displayed when a web request was successful. -->
+    <string name="httpErrorOk">OK</string>
+    <!-- Displayed when a web request failed because we don't know the exact reason. -->
+    <string name="httpError">The Web page contains an error.</string>
+    <!-- Displayed when a web request failed because the URL could not be found. -->
+    <string name="httpErrorLookup">The URL could not be found.</string>
+    <!-- Displayed when a web request failed because the site's authentication scheme is not supported by us. -->
+    <string name="httpErrorUnsupportedAuthScheme">The site authentication scheme is not supported.</string>
+    <!-- Displayed when a web request failed because the authentication failed. -->
+    <string name="httpErrorAuth">Authentication was unsuccessful.</string>
+    <!-- Displayed when a web request failed because the authentication with the proxy failed. -->
+    <string name="httpErrorProxyAuth">Authentication via the proxy server was unsuccessful.</string>
+    <!-- Displayed when a web request failed because there was a connection error. -->
+    <string name="httpErrorConnect">The connection to the server was unsuccessful.</string>
+    <!-- Displayed when a web request failed because there was an input or output error. -->
+    <string name="httpErrorIO">The server failed to communicate. Try again later.</string>
+    <!-- Displayed when a web request failed because the request timed out -->
+    <string name="httpErrorTimeout">The connection to the server timed out.</string>
+    <!-- Displayed when a web request failed because the site tried to redirect us one too many times -->
+    <string name="httpErrorRedirectLoop">The page contains too many server redirects.</string>
+    <!-- Displayed when a web request failed because the protocol of the server is not supported. -->
+    <string name="httpErrorUnsupportedScheme">The protocol is not supported.</string>
+    <!-- Displayed when a web request failed because the a secure connection couldn't be made to the server.-->
+    <string name="httpErrorFailedSslHandshake">A secure connection could not be established.</string>
+    <!-- Displayed when a web request failed because the URL isn't in a valid form. -->
+    <string name="httpErrorBadUrl">The page could not be opened because the URL is invalid.</string>
+    <!-- Displayed when a request failed because we failed to open the file. -->
+    <string name="httpErrorFile">The file could not be accessed.</string>
+    <!-- Displayed when a request failed because the file wasn't found. -->
+    <string name="httpErrorFileNotFound">The requested file was not found.</string>
+    <!-- Displayed when a request failed because there are too many requests right now. -->
+    <string name="httpErrorTooManyRequests">Too many requests are being processed. Try again later.</string>
+    
+        <!-- Do not translate.  WebView User Agent string -->
+<!--     <string name="web_user_agent">Mozilla/5.0 (Linux; U; Android %s) -->
+<!--         AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1</string> -->
+	<string name="web_user_agent">Android;DeviceId:saga HTC Desire S;</string>
+</resources>

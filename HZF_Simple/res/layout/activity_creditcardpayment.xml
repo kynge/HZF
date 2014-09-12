@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkground_img"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title_layout" />
+
+    <!-- 账号 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_account_num_2"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/account_num_2" />
+
+        <EditText
+            android:id="@+id/et_account_num_2"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_account_num_2"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="14sp" 
+            android:hint="@string/account_num_hint_2"
+            android:layout_marginRight="10.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+	<!-- 转账金额 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_transport_money_2"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/transport_money_2" />
+
+        <EditText
+            android:id="@+id/et_transport_money_2"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_transport_money_2"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="@string/transport_money_hint_2"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="14sp" 
+            android:layout_marginRight="10.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+    
+    
+   	<!-- 备注 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_mark_2"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/mark_txt_2" />
+
+        <EditText
+            android:id="@+id/et_mark_2"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_mark_2"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="@string/mark_txt_hint_2"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="14sp" 
+            android:layout_marginRight="10.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_sure_transport"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/long_button_selector"
+        android:gravity="center"
+        android:text="@string/btn_sure_transport"
+        android:textColor="@color/g999999"
+        android:textSize="16sp" />
+
+    
+</LinearLayout>

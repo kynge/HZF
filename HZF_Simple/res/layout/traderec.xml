@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkground_img"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbar_common_bg" >
+
+        <TextView
+            android:id="@+id/text_main_title"
+            style="@style/text_title_main_style"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/right_linear"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null" 
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/choose_time_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:clickable="false"
+            android:contentDescription="@null"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/button_choose_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/unlogin_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您没有登录，要查看记录，请"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/go_login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whole_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="23dp"
+            android:baselineAligned="false"
+            android:padding="1dp"
+            android:background="@drawable/shape_bg_tractitle"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/all_trade_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3"
+                android:background="@color/trac_title_click_backg"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/all_trade_text"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="全 部"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="#c4c4c4" />
+
+            <LinearLayout
+                android:id="@+id/not_pay_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3"
+                android:background="#dfdfdf"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/not_pay_text"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="待付款"
+                    android:textColor="#999999"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="#c4c4c4" />
+
+            <LinearLayout
+                android:id="@+id/has_over_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3"
+                android:background="#dfdfdf"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/has_over_text"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="交易完成"
+                    android:textColor="#999999"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6" 
+            android:visibility="gone"/>
+
+        <!-- <ListView -->
+        <!-- android:id="@+id/tradelist" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:cacheColorHint="#00000000" -->
+        <!-- android:divider="#E6E6E6" -->
+        <!-- android:dividerHeight="1dp" -->
+        <!-- android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" -->
+        <!-- android:visibility="visible" > -->
+        <!-- </ListView> -->
+
+        <com.whty.qd.upay.common.xlist.XListView
+            android:id="@+id/tradelist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#b4b4b4"
+            android:dividerHeight="0.5dp"
+            android:layout_marginTop="23dp"
+            android:headerDividersEnabled="true"
+            android:listSelector="@drawable/listview_selector"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/no_record_prompt_area"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+			<!-- 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_huizhifu_img2" />
+			 -->
+			   <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@null"
+                 />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/no_record_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="没有交易记录"
+                    android:textColor="#B1B1B1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/goto_phone_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#eb7f6e"
+                    android:textSize="14sp" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="、"
+                    android:textColor="#cccccc"
+                    android:textSize="14sp" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/goto_creditcard_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#eb7f6e"
+                    android:textSize="14sp" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c4c4c4" >
+    </LinearLayout>
+
+</LinearLayout>

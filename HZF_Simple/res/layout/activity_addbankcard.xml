@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkground_img"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title_layout" />
+
+    <!-- 持卡人 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_bankcard_holder"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/bankcard_holder" />
+
+        <EditText
+            android:id="@+id/et_bankcard_holder"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_bankcard_holder"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="14sp" 
+            android:hint="@string/bankcard_holder_hint"
+            android:layout_marginRight="10.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+	<!-- 卡号 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_bankcard_num"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/bankcard_num" />
+
+        <EditText
+            android:id="@+id/et_bankcard_num"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_bankcard_num"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="@string/bankcard_num_hint"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="14sp" 
+            android:layout_marginRight="10.0dip"
+            android:inputType="number"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+    
+    
+   	<!-- 所属银行 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_belongbank"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="@string/belong_bank" />
+
+        <EditText
+            android:id="@+id/et_belongbank"
+            style="@style/login_text_style_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_belongbank"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="@string/belong_bank_hint"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="14sp" 
+            android:layout_marginRight="10.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" 
+            android:layout_marginRight="10.0dip"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_sure_add"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/long_button_selector"
+        android:gravity="center"
+        android:text="@string/btn_sure_transport"
+        android:textColor="@color/g999999"
+        android:textSize="16sp" />
+
+    
+</LinearLayout>

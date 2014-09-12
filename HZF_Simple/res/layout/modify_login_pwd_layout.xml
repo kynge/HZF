@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkground_img"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="原密码：" />
+
+        <EditText
+            android:id="@+id/psd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="请输入原密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            style="@style/et_login_et_style2" 
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="新密码：" />
+
+        <EditText
+            android:id="@+id/psd_new"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            style="@style/et_login_et_style2" 
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/login_text_style_one"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="bottom|left"
+            android:text="确认新密码：" />
+
+        <EditText
+            android:id="@+id/psd_new_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text"
+            android:background="@android:color/transparent"
+            android:gravity="bottom|right"
+            android:hint="请再次输入新密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            style="@style/et_login_et_style2" 
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_frame_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp" >
+
+        <CheckBox
+            android:id="@+id/showPsdChk"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/button_raio_selector" />
+
+        <TextView
+            android:id="@+id/show_psd"
+            style="@style/login_text_style_two"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/showPsdChk"
+            android:text="@string/show_psd"
+            android:textColor="#999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/long_button_selector"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/g999999"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_default_icon" />
+
+    <ImageView
+        android:id="@+id/image_icon_offline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_daishangxian_00"
+        android:visibility="gone" 
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/image_loading"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_update_00"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/text_main_style_one"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="手机充值" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/image_icon_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:src="@drawable/icon_new_00"
+        android:visibility="gone" />
+
+</RelativeLayout>

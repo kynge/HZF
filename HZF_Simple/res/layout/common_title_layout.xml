@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/actionbar_common_bg" >
+
+    <LinearLayout
+        android:id="@+id/left_linear"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@null" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_title_back_selector"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/text_main_title"
+        style="@style/text_title_main_style"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_minor"
+        style="@style/text_title_minor_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/right_linear"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_title_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_title_ok_selector"
+        android:clickable="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

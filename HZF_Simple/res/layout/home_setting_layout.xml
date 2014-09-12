@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkground_img"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/actionbar_common_bg" >
+
+        <TextView
+            android:id="@+id/text_main_title"
+            style="@style/text_title_main_style"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/kjt" />
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/shape_bg_listview"
+        android:cacheColorHint="@null"
+        android:listSelector="#00ffffff" />
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list1"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/shape_bg_listview"
+        android:dividerHeight="0.5dp"
+        android:divider="#b4b4b4"
+        android:cacheColorHint="@null"
+        android:listSelector="#00ffffff" />
+
+    <ListView
+        android:id="@+id/list3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/shape_bg_listview"
+        android:dividerHeight="0.5dp"
+        android:divider="#b4b4b4"
+        android:cacheColorHint="@null"
+        android:listSelector="#00ffffff" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c4c4c4" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkground_img"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/traderec_confirm_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="52dp"
+	                android:layout_marginLeft="13dp"
+	                android:layout_marginRight="13dp">
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#333333"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentLeft="true"
+	                    android:text="订单编号"/>
+	                
+	                <TextView 
+	                    android:id="@+id/order_no"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#999999"
+	                    android:paddingLeft="100dp"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:text="12902931"/>
+	            </RelativeLayout>
+	            
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:background="@color/com_line_color"/>
+	            
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="52dp"
+	                android:layout_marginLeft="13dp"
+	                android:layout_marginRight="13dp">
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#333333"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentLeft="true"
+	                    android:text="充值手机号"/>
+	                
+	                <TextView 
+	                    android:id="@+id/phoneNo"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#999999"
+	                    android:paddingLeft="100dp"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:text="18627758934"/>
+	            </RelativeLayout>
+	            
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:background="@color/com_line_color"/>
+	            
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="52dp"
+	                android:layout_marginLeft="13dp"
+	                android:layout_marginRight="13dp">
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#333333"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentLeft="true"
+	                    android:text="充值面额"/>
+	                
+	                <TextView 
+	                    android:id="@+id/trac_amount"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="@color/trac_title_click_backg"
+	                    android:paddingLeft="100dp"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:text="￥50.00"/>
+	            </RelativeLayout>
+	            
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:background="@color/com_line_color"/>
+	            
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="52dp"
+	                android:layout_marginLeft="13dp"
+	                android:layout_marginRight="13dp">
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#333333"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentLeft="true"
+	                    android:text="支付金额"/>
+	                
+	                <TextView 
+	                    android:id="@+id/chargemoney"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="@color/trac_title_click_backg"
+	                    android:paddingLeft="100dp"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:text="￥50.00"/>
+	            </RelativeLayout>
+	            
+	            
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:background="@color/com_line_color"/>
+	            
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="52dp"
+	                android:layout_marginLeft="13dp"
+	                android:layout_marginRight="13dp"
+	                android:visibility="gone">
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#333333"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentLeft="true"
+	                    android:text="付款账号"/>
+	                
+	                <TextView 
+	                    android:id="@+id/bank_account"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#999999"
+	                    android:paddingLeft="100dp"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:text="--"/>
+	            </RelativeLayout>
+	            
+	            
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:background="@color/com_line_color"
+	                android:visibility="gone"/>
+	            
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="52dp"
+	                android:layout_marginLeft="13dp"
+	                android:layout_marginRight="13dp">
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#333333"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentLeft="true"
+	                    android:text="创建时间"/>
+	                
+	                <TextView 
+	                    android:id="@+id/create_time"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="16sp"
+	                    android:textColor="#999999"
+	                    android:paddingLeft="100dp"
+	                    android:layout_centerVertical="true"
+	                    android:layout_alignParentRight="true"
+	                    android:text="2013-08-13 17:15:15"/>
+	            </RelativeLayout>
+	            
+	             <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:background="@color/com_line_color"/>
+            </LinearLayout>
+            
+            
+             <Button
+                android:id="@+id/cancel_button"
+                style="@style/pay_button_style"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="撤 销" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/pay_button"
+                style="@style/pay_button_style"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="56dp"
+                android:text="付 款" 
+                android:visibility="gone"/>
+           
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkground_img"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_style_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@color/mytransparent"
+                    android:text="手机号码" />
+
+                <TextView
+                    android:id="@+id/phoneNum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+					style="@style/text_style_common2"                    
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/deep_line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_style_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@color/mytransparent"
+                    android:text="网络运营商" />
+
+                <TextView
+                    android:id="@+id/phoneType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    style="@style/text_style_common2"     
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/deep_line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_style_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@color/mytransparent"
+                    android:text="手机归属地" />
+
+                <TextView
+                    android:id="@+id/phoneArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    style="@style/text_style_common2"     
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/deep_line_color" />
+			
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp">
+                
+	            <TextView
+	                android:id="@+id/num_of_recharge_spinner"
+	                style="@style/choose_details_spinner_style" 
+	                android:gravity="bottom"/>
+	            
+	            <ImageView
+	            	android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+	            	android:layout_alignParentBottom="true"
+	           	 	android:scaleType="fitXY"
+	            	android:src="@drawable/selector_frame_selector" />
+            
+            </RelativeLayout>
+        </LinearLayout>
+	
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true"
+            >
+             <Button
+	            android:id="@+id/pay_submit_button"
+	            style="@style/pay_button_style"
+	            android:layout_width="fill_parent"
+	
+	            android:layout_marginBottom="56dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_weight="1"
+	            android:text="下一步" />
+             <!-- 
+              <Button
+	            android:id="@+id/pay_finish_pay"
+	            style="@style/pay_button_style"
+	            android:layout_width="fill_parent"
+	            android:layout_marginBottom="56dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_weight="1"
+	            android:text="完成支付" />
+	             -->
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

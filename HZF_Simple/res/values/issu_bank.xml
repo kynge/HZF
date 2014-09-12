@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  	<string-array name="issu_bank">
+  	    <item>请选择发卡行</item>
+  	    <item>招商银行</item>
+  	    <item>建设银行</item>
+  	    <item>工商银行</item>
+  	    <item>交通银行</item>
+  	    <item>中国银行</item>
+  	</string-array>  
+</resources>

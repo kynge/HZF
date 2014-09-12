@@ -1,0 +1,241 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="text_style_common" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/text_background</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    
+   <style name="text_style_common2" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#c3c3c3</item>
+    </style>
+
+    <style name="choose_details_spinner_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:background">@color/mytransparent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/trac_title_click_backg</item>
+    </style>
+
+    <!-- 订单确认界面左标题样式 -->
+    <style name="text_order_title_style" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/g000000</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 订单确认界面右边内容样式 -->
+    <style name="text_order_content_style" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/g666666</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- dialog正文style one -->
+    <style name="text_dialog_style_one" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/g333333</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- dialog标题style one -->
+    <style name="text_dialog_title_style_one" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/g000000</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="pay_title_text_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ff2c2c2c</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="pay_common_text_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="pay_button_style" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">145dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/common_button_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <!-- 定长button dialog style one -->
+    <style name="button_dialog_short_style" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/dialog_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/dialog_button_selector</item>
+    </style>
+
+    <!-- 首页tab style -->
+    <style name="text_tab_style" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/g333333</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="login_text_style_one" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- text title主标题 -->
+    <style name="text_title_main_style" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/gffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- text title副标题 -->
+    <style name="text_title_minor_style" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="login_text_style_two" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/g999999</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="progressBarStyleHorizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@drawable/icon_anzhuang_shadow</item>
+        <item name="android:minHeight">7dip</item>
+        <item name="android:maxHeight">7dip</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <!-- text正文style one -->
+    <style name="text_main_style_one" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/g333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="main_theme" mce_bogus="1">
+        <item name="android:windowAnimationStyle">@style/mainAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="mainAnimation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/back_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/back_exit</item>
+    </style>
+
+    <!-- loading页面进入按钮style -->
+    <style name="entrance_button_style" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/entrance_button_selector</item>
+    </style>
+
+    <!-- 首页button tab style -->
+    <style name="main_tab_bottom">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@drawable/tab_button_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/radio_button_selector</item>
+    </style>
+    <!-- 通用文本输入，比如注册界面 -->
+    <style name="common_input_value_edittext" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:background">@color/gffffff</item>
+        <item name="android:textColor">@color/g333333</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="et_login_et_style">
+        <item name="android:maxLength">20</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+   <style name="et_login_et_style2">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+   
+   
+</resources>
